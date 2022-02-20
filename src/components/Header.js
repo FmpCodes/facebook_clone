@@ -4,6 +4,11 @@ import FlagIcon from '@mui/icons-material/Flag';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
 import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
+import { Avatar, IconButton } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import ForumIcon from '@mui/icons-material/Forum';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './Header.css'
 
@@ -39,7 +44,31 @@ function Header() {
                   <SupervisedUserCircleIcon fontSize="large" />
                 </div>
 
-            </div>            
+            </div> 
+
+            <div className="header__right">
+                <div className="header__info">
+                    <Avatar src={""}/>
+                    <h4>{}</h4>
+                </div>
+
+                <IconButton>
+                  <AddIcon />  
+                </IconButton>
+
+                <IconButton>
+                  <ForumIcon />  
+                </IconButton>
+                
+                <IconButton>
+                  <NotificationsActiveIcon />  
+                </IconButton>
+
+                <IconButton>
+                  <ExpandMoreIcon />  
+                </IconButton>
+
+            </div>
        </div>
     )
 }
